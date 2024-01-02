@@ -1,0 +1,90 @@
+/* Updated CSS for full-width header background on mobile */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px; /* Increased padding for more space */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.logo-left,
+.logo-right {
+    margin-right: 20px; /* Add space between logos and content */
+    background-color: white; /* Set background color to white */
+    padding: 10px; /* Add padding for a cleaner look */
+    border-radius: 10px; /* Set border-radius for rounded edges */
+}
+
+.logo-left img,
+.logo-right img {
+    max-height: 80px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Set border-radius for rounded image */
+}
+
+nav {
+    margin-top: 20px; /* Add spacing between logos and nav */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+section {
+    max-width: 100%; /* Ensure full width */
+    margin: 20px 0; /* Adjusted margin for mobile */
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px; /* Increased padding for more space */
+    text-align: center;
+    
+    width: 180%;
+}
+/* Updated CSS for image slider */
+#image-slider {
+    max-width: 800px;
+    margin: 20px auto; /* Center the slider horizontally */
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease-in-out; /* Add transition for smoother effect */
+}
+
+.slide {
+    flex: 0 0 100%; /* Each slide takes up the full width */
+}
+
+/* Add styles for fade effect */
+.fade {
+    opacity: 0;
+}
+
+.fade.active {
+    opacity: 1;
+}
+
